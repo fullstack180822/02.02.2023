@@ -29,7 +29,13 @@ public class Main {
     // 1! = 1
     // 0! = 1
 
-    
+    public int factioral_recursion(int index) {
+        if (index <= 1) {
+            return 1;
+        }
+        return index * factioral_recursion((index - 1));
+    }
+
 
     public static int fibb_recursion(int index) {
         if (index == 1) {
